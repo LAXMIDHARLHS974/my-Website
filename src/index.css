@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-portfolio-bg: #080611;
+  --color-portfolio-panel: #100c1d;
+  --color-portfolio-purple: #a855f7;
+  --color-portfolio-pink: #ec4899;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #080611;
+  color: #f5f3ff;
+  font-family: 'Space Grotesk', sans-serif;
+}
