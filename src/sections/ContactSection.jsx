@@ -74,14 +74,14 @@ const ContactSection = () => {
 
                   {/* Subtitle */}
                   <p className="mt-3 max-w-lg font-mono text-xs leading-relaxed text-gray-200 drop-shadow-[0_1px_8px_rgba(0,0,0,0.85)] sm:text-sm">
-                    Have an idea, a project, or just want to say hi?
+                    Have an idea, a project, or just want to say hi_?
                     <br />
                     I'd love to hear from you. Let's connect and create something amazing together.
                   </p>
                 </div>
               </ScrollReveal>
 
-              {/* 4 Contact Info Cards: Hidden on mobile (< lg), visible in 2x2 grid on desktop (lg+) */}
+              {/* 4 Contact Info Cards */}
               <div className="mt-7 hidden lg:grid grid-cols-1 gap-3.5 sm:grid-cols-2 max-w-xl">
                 {/* 1. Email Me */}
                 <ScrollReveal animation="fade-up" delay={120}>
@@ -98,9 +98,6 @@ const ContactSection = () => {
                       </h3>
                       <p className="truncate text-xs font-mono text-gray-200 transition-colors group-hover:text-pink-300">
                         laxmidharsahoo0974@gmail.com
-                      </p>
-                      <p className="mt-0.5 text-[11px] text-purple-200/60">
-                        I usually reply within 24 hours.
                       </p>
                     </div>
                   </a>
@@ -154,7 +151,7 @@ const ContactSection = () => {
                         linkedin.com/in/laxmidhar-sahoo
                       </p>
                       <p className="mt-0.5 text-[11px] text-purple-200/60">
-                        Let's connect professionally.
+                        Let's connect.
                       </p>
                     </div>
                   </a>
@@ -171,7 +168,7 @@ const ContactSection = () => {
                         Location
                       </h3>
                       <p className="text-xs font-mono text-gray-200">
-                        Odisha, India
+                        ????, India
                       </p>
                       <p className="mt-0.5 text-[11px] text-purple-200/60">
                         Open to remote opportunities.
@@ -180,19 +177,6 @@ const ContactSection = () => {
                   </div>
                 </ScrollReveal>
               </div>
-
-              {/* Quote Box on Bottom Left */}
-              <ScrollReveal animation="fade-up" delay={200}>
-                <div className="mt-4 md:mt-6 max-w-xl rounded-2xl border border-purple-400/30 bg-white/[0.05] px-6 py-4 backdrop-blur-md shadow-[0_0_25px_rgba(168,85,247,0.12)] transition-all duration-300 hover:border-pink-500/50">
-                  <span className="select-none font-serif text-2xl font-bold leading-none text-pink-400 drop-shadow-[0_0_10px_rgba(236,72,153,0.5)]">
-                    “
-                  </span>
-                  <p className="mt-1 font-mono text-xs leading-snug text-white drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)] sm:text-sm">
-                    Great ideas start with a simple conversation.
-                  </p>
-                  <div className="mt-2.5 h-[2px] w-8 rounded-full bg-pink-500/80 shadow-[0_0_8px_rgba(236,72,153,0.8)]" />
-                </div>
-              </ScrollReveal>
             </div>
 
             {/* RIGHT COLUMN: Contact Form Card (moved down for balanced vertical alignment) */}

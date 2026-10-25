@@ -236,7 +236,6 @@ const techCategories = [
   {
     title: "Frontend",
     description: "Building responsive and modern user interfaces.",
-    badge: "Interactive UI & Web Apps",
     icon: Monitor,
     col1: [
       { name: "React", Icon: TechIcons.React },
@@ -252,7 +251,6 @@ const techCategories = [
   {
     title: "Backend",
     description: "Creating robust and scalable APIs.",
-    badge: "Scalable Microservices",
     icon: Server,
     col1: [
       { name: "Java", Icon: TechIcons.Java },
@@ -268,7 +266,6 @@ const techCategories = [
   {
     title: "Database",
     description: "Storing and managing data efficiently.",
-    badge: "High Performance Data",
     icon: Database,
     col1: [
       { name: "MySQL", Icon: TechIcons.MySQL },
@@ -284,7 +281,6 @@ const techCategories = [
   {
     title: "Tools & Others",
     description: "Tools that improve development workflow.",
-    badge: "Modern DevOps Tools",
     icon: Wrench,
     col1: [
       { name: "Git", Icon: TechIcons.Git },
@@ -307,7 +303,7 @@ const TechSection = () => {
         className="relative flex min-h-screen w-full flex-col justify-center bg-cover bg-center bg-no-repeat pt-20 pb-20 px-4 sm:px-6 lg:py-16 lg:pl-36 lg:pr-12 xl:pl-40 xl:pr-14"
         style={{ backgroundImage: `url(${techImage})` }}
       >
-        {/* Ambient floating sakura petals */}
+
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <span className="absolute top-[18%] left-[22%] h-3 w-2 rotate-45 rounded-full bg-pink-400/40 blur-[0.5px] animate-pulse" />
           <span className="absolute top-[32%] left-[45%] h-3.5 w-2 -rotate-12 rounded-full bg-pink-300/40 blur-[0.5px]" />
@@ -315,7 +311,7 @@ const TechSection = () => {
           <span className="absolute top-[12%] right-[18%] h-3 w-2 rotate-45 rounded-full bg-pink-300/40" />
         </div>
 
-        {/* Main Content Container */}
+
         <div className="relative z-10 mx-auto flex w-full max-w-[1520px] flex-col">
           {/* Header Row: Title & Subtitle with scroll reveal */}
           <ScrollReveal animation="fade-up" delay={100}>
@@ -333,7 +329,7 @@ const TechSection = () => {
             </div>
           </ScrollReveal>
 
-          {/* 4 Glassmorphism Feature Cards Grid with generous size and gaps */}
+          {/* Tech Tool Box */}
           <div className="mt-8 sm:mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-8">
             {techCategories.map((cat, idx) => {
               const CategoryIcon = cat.icon;
@@ -405,17 +401,6 @@ const TechSection = () => {
                           })}
                         </div>
                       </div>
-                    </div>
-
-                    {/* Bottom Status Footer (Grounded and Complete) */}
-                    <div className="mt-6 flex items-center justify-between border-t border-purple-400/20 pt-4">
-                      <span className="text-[11px] font-mono tracking-wider uppercase text-purple-300/80">
-                        {cat.badge}
-                      </span>
-                      <span className="flex items-center gap-1.5 text-[11px] font-medium text-pink-400">
-                        <span className="h-2 w-2 rounded-full bg-pink-400 animate-pulse shadow-[0_0_8px_rgba(236,72,153,0.9)]" />
-                        Active
-                      </span>
                     </div>
                   </div>
                 </ScrollReveal>
