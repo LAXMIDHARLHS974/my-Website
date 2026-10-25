@@ -40,23 +40,23 @@ const projectsData = [
     pt2: "Charts",
     pt3: "Tailwind CSS",
     categories: ["Web App"],
-    gitLink: "https://github.com/LAXMIDHARLHS974",
-    projectLink: "https://laxmidharLHS974.github.io/student-study-dashboard/",
+    gitLink: "https://github.com/LAXMIDHARLHS974/Study-Analytics-Dashboard",
+    projectLink: "https://anonymous-nhxd.onrender.com/",
   },
   {
-    pimg: springbootImage,
-    pName: "Spring Boot APIs",
+    pimg: javaDsaImage,
+    pName: "Student Record Management",
     pDec: "Enterprise RESTful microservices with PostgreSQL, JPA specifications, and JWT auth.",
     pt1: "Spring Boot",
     pt2: "PostgreSQL",
     pt3: "REST API",
     categories: ["Java", "Spring Boot"],
-    gitLink: "https://github.com/LAXMIDHARLHS974",
+    gitLink: "https://github.com/LAXMIDHARLHS974/Student-Record-Management-System",
     projectLink: "https://student-record-management-system-brf8.onrender.com/api/students",
   },
   {
-    pimg: javaDsaImage,
-    pName: "Java Algorithms & DSA",
+    pimg: springbootImage,
+    pName: "Spring Boot",
     pDec: "Comprehensive suite of data structures, graph theory, sorting, and concurrent solvers.",
     pt1: "Java",
     pt2: "DSA",
@@ -73,7 +73,7 @@ const projectsData = [
     pt2: "Open Source",
     pt3: "Learning",
     categories: ["Open Source", "Web App"],
-    gitLink: "https://github.com/LAXMIDHARLHS974",
+    gitLink: "https://github.com/LAXMIDHARLHS974/Spring-First-App",
     projectLink: "https://github.com/LAXMIDHARLHS974",
   },
 ];
@@ -136,7 +136,7 @@ const ProjectsSection = () => {
             </div>
           </ScrollReveal>
 
-          {/* 6 Cards Grid (Guaranteed full-view fit without bottom cutoff) */}
+          {/* 6 Cards*/}
           <div className="grid w-full grid-cols-1 items-stretch gap-4 md:grid-cols-2 xl:grid-cols-3 xl:gap-5">
             {filteredProjects.map((project, idx) => (
               <ScrollReveal
